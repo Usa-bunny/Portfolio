@@ -86,14 +86,14 @@
             background-image: url('img/Bg-img.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            opacity: 0.15;
+            opacity: 0.1;
             z-index: -1;
             pointer-events: none;
         }
 
         body.dark-mode::before {
             filter: brightness(0.5);
-            opacity: 0.35;
+            opacity: 0.3;
         }
 
         /* Gaya kartun untuk semua elemen */
@@ -890,7 +890,8 @@
                     <h1 class="mb-3 animate-on-scroll">Hai, Saya <br> Ahmad Bani Zaimas Ada'i</h1>
                     <div class="tagline animate-on-scroll">Full-stack Web Developer</div>
                     <div>
-                        <span id="chatText" class="mb-4 animate-on-scroll">Seorang pelajar yang sedang menjelajah pembuatan web, terutama dalam Full-stack. saya dapat membangun website yang menarik dan fungsional dengan keahlian saya di front-end dan sedikit di back-end.</span>
+                        <span id="shortText" class="mb-4 animate-on-scroll">Seorang pelajar yang sedang menjelajah pembuatan web, terutama dalam Full-stack. saya dapat membangun website yang menarik dan fungsional dengan keahlian saya di front-end dan sedikit di back-end.</span>
+                        <span id="fullText" style="display:none;">Seorang pelajar yang sedang menjelajah pembuatan web, terutama dalam Full-stack. saya dapat membangun website yang menarik dan fungsional dengan keahlian saya di front-end dan sedikit di back-end. Saya memiliki minat pada budaya Jepang, khususnya anime dan manga, yang juga mendorong ketertarikan saya pada bahasa jepang serta bekerja maupun kuliah di jepang.</span>
                         <div id="toggleBtn" style="color:var(--text);cursor:pointer;font-size:.9rem;display:inline-block;margin-top:.5rem">Show more</div>
                     </div>
                     
@@ -1034,42 +1035,126 @@
                             <button class="nav-link cartoon-style mx-1 mb-2" data-bs-filter="front-end">Front-end</button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link cartoon-style mx-1 mb-2" data-bs-filter="backend">Back-end</button>
+                            <button class="nav-link cartoon-style mx-1 mb-2" data-bs-filter="back-end">Back-end</button>
                         </li>
                         <li class="nav-item">
                             <button class="nav-link cartoon-style mx-1 mb-2" data-bs-filter="fullstack">Full-stack</button>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link cartoon-style mx-1 mb-2" data-bs-filter="App">App</button>
+                            <button class="nav-link cartoon-style mx-1 mb-2" data-bs-filter="app">App</button>
                         </li>
                     </ul>
                 </div>
             </div>
             
             <div class="row g-4" id="projectGrid">
-                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="front-end">
+                <!-- Usaquiz -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="fullstack">
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Utasan" class="img-fluid">
+                            <img src="img/Usaquiz.png" alt="Quiz" class="img-fluid">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Utasan</h3>
-                            <p class="project-desc">Platform musik</p>
+                            <h3 class="project-title">Usaquiz</h3>
+                            <p class="project-desc">Web kuis kustom untuk membuat dan mengikuti kuis interaktif dengan keamanan dan sistem penilaian otomatis.</p>
                             <div class="project-buttons">
-                                <a href="https://github.com/Usa-bunny/Utasan" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                                <a href="https://github.com/Usa-bunny/Quiz" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                                <a href="https://usaquiz.netlify.app/" class="btn btn-outline-custom btn-sm"><i class="bi bi-box-arrow-up-right"></i> Web</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Portfolio -->
                 <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="front-end">
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="KanaQuest" class="img-fluid">
+                            <img src="img/Portfolio.png" alt="Portfolio" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio</h3>
+                            <p class="project-desc">Website portfolio pribadi dengan desain Manga/komik yang menampilkan proyek dan kemampuan web development.</p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/Usa-bunny/Portfolio" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                                <a href="https://usaportfolio.netlify.app/" class="btn btn-outline-custom btn-sm"><i class="bi bi-box-arrow-up-right"></i> Web</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio-template -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="front-end">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/Portfolio-template.png" alt="Portfolio Template" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Template</h3>
+                            <p class="project-desc">Template portfolio siap pakai dengan desain modern yang mudah dikustomisasi.</p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/Usa-bunny/Portfolio-template" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tsuu-a -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="front-end">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/Tsuu-a.png" alt="Tsuu-a" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tsuu-a</h3>
+                            <p class="project-desc">Website travel untuk merencanakan liburan.</p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/Usa-bunny/Tsuu-a" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TASSKU -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="back-end">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/TASKKU.png" alt="TASSKU" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">TASSKU</h3>
+                            <p class="project-desc">Website manajemen tugas dengan notifikasi, fitur CRUD, pengingat deadline, dan kategori organisasi.</p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/Usa-bunny/TASSKU" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Math-bot -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="front-end">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/Math-bot.png" alt="Math-bot" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Math-bot</h3>
+                            <p class="project-desc">Bot web penyelesaian kondisi matematika dari yang mudah sampai yang susah</p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/Usa-bunny/Math-bot" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kana Quest -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="fullstack">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/Kanaquest.png" alt="KanaQuest" class="img-fluid">
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">KanaQuest</h3>
-                            <p class="project-desc">Website untuk belajar huruf jepang yaitu hiragana dan katakana</p>
+                            <p class="project-desc">Kuis interaktif belajar huruf Jepang (Hiragana/Katakana) dengan berbagai mode dan statistik progres.</p>
                             <div class="project-buttons">
                                 <a href="https://github.com/Usa-bunny/Kana-Quest" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
                                 <a href="https://kanaquestt.netlify.app/" class="btn btn-outline-custom btn-sm"><i class="bi bi-box-arrow-up-right"></i> Web</a>
@@ -1077,22 +1162,41 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="front-end">
+
+                <!-- Usanime -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="app">
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80" alt="Project 3" class="img-fluid">
+                            <img src="img/Usanime.png" alt="Usanime" class="img-fluid">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Website Portfolio</h3>
-                            <p class="project-desc">Website portfolio interaktif dengan animasi dan efek kartun</p>
+                            <h3 class="project-title">Usanime</h3>
+                            <p class="project-desc">Aplikasi streaming anime kustom dengan katalog pencarian, history, dan fitur favorit.</p>
                             <div class="project-buttons">
-                                <a href="#" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
-                                <a href="#" class="btn btn-outline-custom btn-sm"><i class="bi bi-box-arrow-up-right"></i> Web</a>
+                                <a href="https://github.com/Usa-bunny/Usanime" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Utasan -->
+                <div class="col-md-6 col-lg-4 animate-on-scroll" data-category="front-end">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/Utasan.png" alt="Utasan" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Utasan</h3>
+                            <p class="project-desc">Platform musik original untuk artis berbagi karya dengan upload lagu, playlist, dan sistem streaming.</p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/Usa-bunny/Utasan" class="btn btn-custom btn-sm"><i class="bi bi-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             </div>
         </div>
     </section>
@@ -1201,11 +1305,6 @@
                     notificationIcon.className = 'notification-icon bi bi-exclamation-circle-fill';
                     customNotification.className = 'custom-notification notification-error';
                     notificationTitle.textContent = 'Error';
-                    break;
-                case 'warning':
-                    notificationIcon.className = 'notification-icon bi bi-exclamation-triangle-fill';
-                    customNotification.className = 'custom-notification notification-info';
-                    notificationTitle.textContent = 'Peringatan';
                     break;
                 default:
                     notificationIcon.className = 'notification-icon bi bi-info-circle-fill';
@@ -1337,15 +1436,21 @@
             });
 
             let toggleBtn = document.getElementById('toggleBtn');
-            let chatText = document.getElementById('chatText');
-            let shortText = "Seorang pelajar yang sedang menjelajah pembuatan web, terutama dalam Full-stack. saya dapat membangun website yang menarik dan fungsional dengan keahlian saya di front-end dan sedikit di back-end.";
-            let fullText = "Seorang pelajar yang sedang menjelajah pembuatan web, terutama dalam Full-stack. saya dapat membangun website yang menarik dan fungsional dengan keahlian saya di front-end dan sedikit di back-end. Saya memiliki minat pada budaya Jepang, khususnya anime dan manga, yang juga mendorong ketertarikan saya pada bahasa jepang serta bekerja maupun kuliah di jepang.";
+            let shortText = document.getElementById('shortText');
+            let fullText = document.getElementById('fullText');
             let expanded = false;
 
             toggleBtn.addEventListener('click', () => {
                 expanded = !expanded;
-                chatText.innerHTML = expanded ? fullText : shortText;
-                toggleBtn.textContent = expanded ? "Show less" : "Show more";
+                if (expanded) {
+                    shortText.style.display = 'none';
+                    fullText.style.display = 'inline';
+                    toggleBtn.textContent = "Show less";
+                } else {
+                    shortText.style.display = 'inline';
+                    fullText.style.display = 'none';
+                    toggleBtn.textContent = "Show more";
+                }
             });
             
             // Smooth scroll untuk navigasi
