@@ -514,52 +514,24 @@
             transform: translateY(1);
             opacity: 1;
             pointer-events: auto;
-            animation: slideAnimation 5s forwards;
+            animation: slideAnimation 8s forwards;
         }
 
         @keyframes slideAnimation {
             0% {
-                transform: translateY(-100%) translateX(0) translateZ(1000px);
+                transform: translateY(0) translateX(-1000px) ;
                 opacity: 0;
             }
-            10% {
-                transform: translateY(0) translateX(0) translateZ(1000px);
-                opacity: 1;
-            }
-            20% {
-                transform: translateY(0) translateX(0) translateZ(1000px);
-                opacity: 1;
-            }
-            30% {
-                transform: translateY(30%) translateX(-250px);
-                opacity: 1;
-            }
             40% {
-                transform: translateY(0) translateX(-500px) translateZ(1000px);
-                opacity: 1;
-            }
-            50% {
-                transform: translateY(30%) translateX(-250px);
+                transform: translateY(0) translateX(0);
                 opacity: 1;
             }
             60% {
-                transform: translateY(0) translateX(0) translateZ(1000px);
+                transform: translateY(0) translateX(0);
                 opacity: 1;
-            }
-            70% {
-                transform: translateY(30%) translateX(250px);
-                opacity: 1;
-            }
-            80% { 
-                transform: translateY(0) translateX(500px) translateZ(1000px);
-                opacity: 1; 
-            }
-            90% { 
-                transform: translateY(30%) translateX(750px);
-                opacity: 1; 
             }
             100% {
-                transform: translateY(0) translateX(1000px) translateZ(1000px);
+                transform: translateY(0) translateX(1000px) ;
                 opacity: 0;
             }
         }
@@ -1273,9 +1245,9 @@
 
                     <div class="d-flex justify-content-center mb-4 flex-wrap">
                         <a href="https://wa.me/+6283866681378" class="social-link mx-2 mb-2"><i class="bi bi-whatsapp"></i></a>
-                        <a href="#" class="social-link mx-2 mb-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmad-bani/" class="social-link mx-2 mb-2"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/Usa-bunny" class="social-link mx-2 mb-2"><i class="bi bi-github"></i></a>
-                        <a href="#" class="social-link mx-2 mb-2"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/zai_masu/" class="social-link mx-2 mb-2"><i class="bi bi-instagram"></i></a>
                     </div>
                     
                     <p class="text-muted">&copy; 2025 Ahmad Bani Zaimas Ada'i. Hak Cipta Dilindungi.</p>
@@ -1326,7 +1298,7 @@
             // Sembunyikan setelah 5 detik
             setTimeout(() => {
                 customNotification.classList.remove('show');
-            }, 5000);
+            }, 8000);
         }
 
         // Mode Gelap/Terang
